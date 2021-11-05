@@ -1,0 +1,65 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  color: white;
+  background-color: rgb(216, 146, 238);
+  font-size: 1.5rem;
+}
+
+.toDoList{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo{
+  display: flex;
+  margin-top: 40px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(108, 7, 139);
+}
+
+.novoItem{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 10px;
+}
+
+#novo-item{
+  width: 70%;
+  height: 30px;
+  font-size: 1.2rem;
+}
+
+.lista{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 8px;
+  background-color: rgb(165, 57, 197);
+  box-shadow: 1px 1px 5px;
+}
+
+input{
+  width: 30px;
+  height: 30px;
+  margin: 15px;
+}
+
+.item > input[type='checkbox']:checked + div{
+  text-decoration: line-through;
+} 
